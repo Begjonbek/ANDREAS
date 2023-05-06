@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: {
-        'xll':"1360px"
+        'xll':"1080px"
+      },
+      backgroundImage: {
+        'hero-back': ["url('../img/header/background.png')"]
       },
       fontFamily: {
         'inter':["'Inter','sans-serif'"]
