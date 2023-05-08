@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="../src/styles.css" />
@@ -60,7 +61,7 @@
               </nav>
             </div>
             <!-- Hamburger Button -->
-            <div class="z-50 xl:absolute -right-44">
+            <div class="z-50 2xl:absolute -right-44">
               <button
                 id="menu-btn"
                 type="button"
@@ -71,13 +72,12 @@
                 <span class="hamburger-bottom"></span>
               </button>
             </div>
-            <!-- Mobile Menu -->
           </div>
         </div>
         <!-- Mobile Menu -->
         <div
           id="menu"
-          class="absolute top-0 bottom-0 bg-white left-0 hidden z-50 w-full max-h-screen uppercase pl-6 bg-black-400"
+          class="absolute top-0 bottom-0 bg-white left-0 hidden z-50 w-full h-3/4 uppercase pl-6 bg-black-400"
         >
           <nav class="flex flex-col gap-4 pt-5 bg-white w-full">
             <div class="flex items-center gap-2">
@@ -111,10 +111,18 @@
                 </li>
               </ul>
               <div class="flex flex-col sm:flex-row items-center gap-2">
-                <a href="#"><img class="w-7" src="./img/header/insvg.svg" alt="logo" /></a>
-                <a href="#"><img class="w-7" src="./img/header/instagram.svg" alt="logo" /></a>
-                <a href="#"><img class="w-7" src="./img/header/yuotube.svg" alt="logo" /></a>
-                <a href="#"> <img class="w-7" src="./img/header/micrafon.svg" alt="logo" /></a>
+                <a href="#"
+                  ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+                /></a>
+                <a href="#"
+                  ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+                /></a>
+                <a href="#"
+                  ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+                /></a>
+                <a href="#">
+                  <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+                /></a>
               </div>
             </div>
             <p class="font-semibold text-blue-250 text-sm">
@@ -123,31 +131,31 @@
             </p>
           </nav>
           <img
-            class="w-1/2 max-h-screen"
+            class="w-2/3 max-h-3/4 hidden sm:flex"
             src="./img/header/andreas-1.png"
             alt=""
           />
         </div>
       </header>
       <!-- hero -->
-      <section class="relative">
+      <section class="relative max-w-screen-2xl ">
         <img
-          class="absolute bottom-0 left-4 max-h-screen max-w-[300px] md:max-w-[480px] lg:max-w-[540px]"
+          class="absolute bottom-0 lg:left-16 xl:left-28 max-h-screen max-w-[350px] md:max-w-[480px] lg:max-w-[540px]"
           src="./img/header/Ellipse.png"
           alt="logo"
         />
         <!-- hero container -->
         <div class="max-w-xll relative mx-auto px-5 flex justify-end">
           <img
-            class="max-w-[442px] absolute bottom-0 -left-40 md:-left-40 z-10"
+            class="max-w-[442px] lg:max-w-[550px] absolute bottom-0 -left-40 md:-left-40 z-10"
             src="./img/header/andreas.png"
             alt="logo"
           />
           <div
             class="relative z-10 flex flex-col gap-y-24 lg:flex-row w-[230px] sm:w-2/5 justify-between mb-28"
           >
-            <div class=" pb-56 lg:pb-0">
-              <div class="hidden lg:flex justify-end items-center gap-4 mb-24">
+            <div class="pb-56 lg:pb-0">
+              <div class="hidden lg:flex justify-end items-center gap-4 mb-48">
                 <img class="w-24" src="./img/header/title.svg" alt="logo" />
                 <span class="md:text-7xl xl:text-9xl font-bold text-gray-250"
                   >/</span
@@ -158,7 +166,7 @@
                 </h2>
               </div>
               <p
-                class="flex ml-auto max-w-[226px] whitespace-nowrap text-sm md:text-base text-right mb-14"
+                class="flex ml-auto max-w-[195px] md:max-w-[226px] whitespace-nowrap text-sm md:text-base text-right mb-14"
               >
                 Company-Builder,<br />
                 Founder der KÜFFNER Group,<br />
@@ -167,7 +175,9 @@
               </p>
               <div class="flex items-center gap-2 justify-end">
                 <span class="w-8 h-[2px] bg-blue-250"></span>
-                <a href="#"><img src="./img/header/yuotube-1.svg" alt="logo" /></a>
+                <a href="#"
+                  ><img src="./img/header/yuotube-1.svg" alt="logo"
+                /></a>
                 <p class="text-xs whitespace-nowrap md:text-sm">
                   Video ansehen
                 </p>
@@ -182,15 +192,23 @@
         </div>
         <div class="absolute top-1/3 right-4">
           <div class="flex flex-col w-8 md:justify-center gap-2">
-            <a href="#"><img class="w-7" src="./img/header/insvg.svg" alt="logo" /></a>
-            <a href="#"><img class="w-7" src="./img/header/instagram.svg" alt="logo" /></a>
-            <a href="#"><img class="w-7" src="./img/header/yuotube.svg" alt="logo" /></a>
-            <a href="#"> <img class="w-7" src="./img/header/micrafon.svg" alt="logo" /></a>
+            <a href="#"
+              ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+            /></a>
+            <a href="#"
+              ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+            /></a>
+            <a href="#"
+              ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+            /></a>
+            <a href="#">
+              <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+            /></a>
           </div>
         </div>
       </section>
     </div>
-
+      <!--  KÜFFNER 02 -->
     <section class="pt-20 pb-44 relative">
       <div class="max-w-xll mx-auto px-5">
         <a
@@ -200,11 +218,13 @@
           <img src="./img/header/title.svg" alt="logo" />
           <span class="text-4xl">/</span>
           <span class="">
-            ANDREAS <br />
-            KÜFFNER
+            CONNECTING <br>
+            THE DOTS
           </span>
         </a>
-        <div class="flex flex-col xl:flex-row items-center justify-between">
+        <div
+          class="flex flex-col xl:flex-row items-center justify-between mb-8"
+        >
           <div>
             <div class="max-w-[640px]">
               <h3 class="text-xl sm:text-2xl font-extrabold mb-10">
@@ -252,46 +272,846 @@
               </button>
             </div>
           </div>
-          <div class="mb-8 xl:mb-0 mx-auto xl:mx-0 flex items-center justify-between">
+          <div
+            class="mb-8 xl:mb-0 mx-auto xl:mx-0 flex items-center justify-between"
+          >
             <img
               class="rounded-xl w-[343px] h-[254px] bg-center sm:h-auto sm:max-w-[350px]"
               src="./img/header/andreas-1.png"
               alt="logo"
             />
           </div>
-          <div class="flex xl:hidden items-center gap-x-2.5 mb-8">
+          <div class="flex xl:hidden items-center gap-x-2.5">
             <button
-              class="flex items-center gap-2 bg-blue-250 text-white py-4 px-8 rounded-lg"
+              class="flex items-center gap-2 bg-blue-250 text-white py-3 md:py-4 px-5 md:px-8 rounded-lg"
             >
               <span>zur Vita</span
               ><img class="w-3" src="./img/header/Arrow.svg" alt="" />
             </button>
             <button
-              class="flex items-center gap-2 bg-blue-250 text-white py-4 px-10 rounded-lg"
+              class="flex items-center gap-2 bg-blue-250 text-white py-3 md:py-4 px-5 md:px-10 rounded-lg"
             >
               Kontakt
             </button>
           </div>
         </div>
         <div class="grid grid-cols-3 md:grid-cols-6 gap-9">
-          <a href="#"><img src="./img/icon/erfolg.svg" alt="logo"></a>
-          <a href="#"><img src="./img/icon/finanzwelt.svg" alt="logo"></a>
-          <a href="#"><img src="./img/icon/founders.svg" alt="logo"></a>
-          <a href="#"><img src="./img/icon/grunder.svg" alt="logo"></a>
-          <a href="#"><img src="./img/icon/netcoo.svg" alt="logo"></a>
-          <a href="#"><img src="./img/icon/amazon.svg" alt="logo"></a>
+          <a href="#"><img src="./img/icon/erfolg.svg" alt="logo" /></a>
+          <a href="#"><img src="./img/icon/finanzwelt.svg" alt="logo" /></a>
+          <a href="#"><img src="./img/icon/founders.svg" alt="logo" /></a>
+          <a href="#"><img src="./img/icon/grunder.svg" alt="logo" /></a>
+          <a href="#"><img src="./img/icon/netcoo.svg" alt="logo" /></a>
+          <a href="#"><img src="./img/icon/amazon.svg" alt="logo" /></a>
         </div>
       </div>
       <div class="hidden lg:flex absolute top-1/3 right-4">
         <div class="flex flex-col w-8 md:justify-center gap-2">
-          <a href="#"><img class="w-7" src="./img/header/insvg.svg" alt="logo" /></a>
-          <a href="#"><img class="w-7" src="./img/header/instagram.svg" alt="logo" /></a>
-          <a href="#"><img class="w-7" src="./img/header/yuotube.svg" alt="logo" /></a>
-          <a href="#"> <img class="w-7" src="./img/header/micrafon.svg" alt="logo" /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+          /></a>
+          <a href="#">
+            <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+          /></a>
         </div>
       </div>
+      <div
+        class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+      >
+        <p class="text-sm md:text-lg text-white">02</p>
+      </div>
     </section>
-
+    <!--  KÜFFNER 03 -->
+    <section class="bg-hero-back bg-no-repeat relative bg-cover py-28">
+      <div class="max-w-xll px-5 mx-auto">
+        <div
+          class="flex flex-col gap-y-10 lg:flex-row items-center justify-between mb-14 md:mb-20"
+        >
+          <h2 class="text-2xl md:text-4xl font-extrabold">
+            BUILDING A BETTER <br />
+            <span class="text-gray-250">TOMORROW</span>
+          </h2>
+          <div class="grid max-w-[544px] text-center grid-cols-4 gap-4">
+            <div
+              class="py-2.5 md:pb-4 shadow-lg px-2.5 md:px-5 text-center  bg-white rounded-xl"
+            >
+              <p class="hidden md:flex text-2xl md:text-[55px] leading-10 font-extrabold">
+                16 <span class="text-gray-500">.</span>
+              </p>
+              <p class="md:hidden flex mx-auto text-4xl font-extrabold">
+                20 <span class="text-gray-500">.</span>
+              </p>
+              <span class="text-[12px] leading-[10px] sm:text-xs font-bold md:text-sm"
+                >Jahre <br> Erfahrung</span
+              >
+            </div>
+            <div
+              class="py-2.5 md:pb-4 px-2.5 md:px-5 text-center shadow-lg bg-white rounded-xl"
+            >
+              <p class="hidden md:flex text-2xl md:text-[55px] leading-10 font-extrabold">
+                22 <span class="text-gray-500">.</span>
+              </p>
+              <p class="md:hidden flex mx-auto text-4xl font-extrabold">
+                20 <span class="text-gray-500">.</span>
+              </p>
+              <span class="text-[12px] leading-[10px] sm:text-xs font-bold md:text-sm"
+                >Jahre <br> Erfahrung</span
+              >
+            </div>
+            <div
+              class="py-2.5 md:pb-4 px-2.5 md:px-5 text-center shadow-lg bg-white rounded-xl"
+            >
+              <p class="hidden md:flex ttext-2xl md:text-[55px] leading-10  font-extrabold">
+                14 <span class="text-gray-500">.</span>
+              </p>
+              <p class="md:hidden flex mx-auto text-4xl font-extrabold">
+                20 <span class="text-gray-500">.</span>
+              </p>
+              <span class="text-[12px] leading-[10px] sm:text-xs font-bold md:text-sm"
+                >Jahre <br> Erfahrung</span
+              >
+            </div>
+            <div
+              class="py-2.5 md:pb-4 px-2.5 md:px-5 text-center shadow-lg bg-white rounded-xl"
+            >
+              <p class="hidden md:flex text-2xl md:text-[55px] leading-10  font-extrabold">
+                30 <span class="text-gray-500">.</span>
+              </p>
+              <p class="md:hidden flex mx-auto text-4xl font-extrabold">
+                20 <span class="text-gray-500">.</span>
+              </p>
+              <span class="text-[12px] leading-[10px] sm:text-xs font-bold md:text-sm"
+                >Jahre <br> Erfahrung</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+                <!-- Swiper -->
+        <div class="swiper mySwiper2 mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 377.png" alt="logo"></div>
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 386.png" alt="logo"></div>
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 388.png" alt="logo"></div>
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 389.png" alt="logo"></div>
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 636.png" alt="logo"></div>
+            <div class="swiper-slide"><img class="w-full md:h-[411px] border-4 h-[249px] object-cover rounded-lg" src="./img/market/Rectangle 638.png" alt="logo"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div
+        class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+      >
+        <p class="text-sm md:text-lg text-white">03</p>
+      </div>
+    </section>
+    <!--  KÜFFNER 04 -->
+    <section class="relative pt-10 pb-28 md:py-28">
+      <div class="max-w-xll mx-auto px-5">
+        <a
+          href="#"
+          class="flex max-w-[160px] font-extrabold shrink-0 mx-auto items-center gap-2 mb-8 md:mb-28"
+        >
+          <img src="./img/header/title.svg" alt="logo" />
+          <span class="text-4xl text-gray-250">/</span>
+          <span class="">
+            ANDREAS <br />
+            KÜFFNER
+          </span>
+        </a>
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-y-8 mb-16">
+          
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2022-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder <br />
+                      Küffner Group
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Die Küffner Group ist ein Multi-Company Konzept mit Fokus auf
+                    Investment-Projekten, Consulting, Kreativ-Produktionen und
+                    Sport-Vermarktung.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder & CEO <br />
+                      Küffner GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Franchise-Unternehmer, Start-Up Investor, Content Creator,
+                    Podcaster, Online-Marketer und Keynote-Speaker.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-40 font-bold text-xl te">
+                      Founder <br />
+                      NXT YOU GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    NXT YOU ist eine Agentur mit Sitz in München und Berlin mit Fokus
+                    auf digitales Marketing, Branding, Social Media und Content
+                    Creation
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-y-8 mb-16">
+          
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2022-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder <br />
+                      Küffner Group
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Die Küffner Group ist ein Multi-Company Konzept mit Fokus auf
+                    Investment-Projekten, Consulting, Kreativ-Produktionen und
+                    Sport-Vermarktung.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder & CEO <br />
+                      Küffner GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Franchise-Unternehmer, Start-Up Investor, Content Creator,
+                    Podcaster, Online-Marketer und Keynote-Speaker.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-40 font-bold text-xl te">
+                      Founder <br />
+                      NXT YOU GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    NXT YOU ist eine Agentur mit Sitz in München und Berlin mit Fokus
+                    auf digitales Marketing, Branding, Social Media und Content
+                    Creation
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-y-8 mb-16">
+          
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2022-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder <br />
+                      Küffner Group
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Die Küffner Group ist ein Multi-Company Konzept mit Fokus auf
+                    Investment-Projekten, Consulting, Kreativ-Produktionen und
+                    Sport-Vermarktung.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-36 font-bold text-xl te">
+                      Founder & CEO <br />
+                      Küffner GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    Franchise-Unternehmer, Start-Up Investor, Content Creator,
+                    Podcaster, Online-Marketer und Keynote-Speaker.
+                  </p>
+                </div>
+                <div class="bg-gray-400 w-full h-[2px]"></div>
+                <div
+                  class="flex flex-col gap-y-2 sm:flex-row justify-between max-w-[710px] md:max-w-6xl mx-auto md:mx-0 md:items-center mb-7"
+                >
+                  <div
+                    class="md:flex max-w-[127px] mr-auto md:max-w-sm justify-between gap-24 items-start"
+                  >
+                    <p class="w-28 font-bold text-base md:text-xl mb-2 te md:mb-0">
+                      2017-heute
+                    </p>
+                    <p class="w-40 font-bold text-xl te">
+                      Founder <br />
+                      NXT YOU GmbH
+                    </p>
+                  </div>
+                  <p class="max-w-sm text-sm md:text-base font-normal text-start">
+                    NXT YOU ist eine Agentur mit Sitz in München und Berlin mit Fokus
+                    auf digitales Marketing, Branding, Social Media und Content
+                    Creation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+    
+        <button class="py-3.5 px-7  bg-blue-250 rounded-lg flex items-center gap-1">
+          <img class="" src="./img/icon/8.svg" alt="logo">
+          <span class="font-semibold text-base text-white">
+            LinkedIn
+          </span>
+        </button>
+      </div>
+      <div class="hidden lg:flex absolute top-1/3 right-4">
+        <div class="flex flex-col w-8 md:justify-center gap-2">
+          <a href="#"
+            ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+          /></a>
+          <a href="#">
+            <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+      >
+        <p class="text-sm md:text-lg text-white">04</p>
+      </div>
+    </section>
+    <!--  KÜFFNER 05 -->
+    <section class="bg-hero-back bg-cover bg-no-repeat py-14 md:py-36 relative">
+      <div class="max-w-xll px-5 mx-auto">
+        <div class="flex items-center justify-between mb-5 md:mb-7">
+          <h2 class="font-extrabold text-2xl md:text-4xl">
+            ARTIKEL & BERICHTE <br>
+            <span class="text-gray-250">KÜFFNER.</span>
+          </h2>
+          <button class="bg-blue-250 py-4 px-5 hidden md:block rounded-md text-white  font-semibold text-base">
+            mehr erfahren
+          </button>
+        </div>
+        <div class="flex flex-col gap-y-8 lg:flex-row items-center justify-between">
+          <div class="max-w-[556px]">
+            <img class="w-full rounded-xl mb-5 md:mb-6" src="./img/market/image-1.png" alt="logo">
+            <button class="w-[118px] h-7 flex items-center justify-center text-xs rounded-lg bg-gray-250 text-white">
+              Sales & Marketing
+            </button>
+              <h3 class="text-xl font-bold mb-4">Your network is your...  – Warum perfektes Netzwerken der Turbo für deine Karriere ist!</h3>
+              <a href="#" class="flex items-center gap-1"><span class="font-bold text-xs">Jetzt lesen</span> 
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2321_1619)">
+                  <path d="M5.62891 12.2793L13.7216 7.06889" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.2793 5.89062L13.7215 7.06976L12.5424 12.512" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2321_1619">
+                  <rect width="14" height="14" fill="white" transform="translate(0 7.57812) rotate(-32.7749)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>
+          </div>
+          <div class="flex flex-col gap-y-8">
+            <div class="max-w-sm ">
+              <img class="w-full rounded-xl mb-3 md:mb-6" src="./img/market/image-3.png" alt="logo">
+              <button class="w-[118px] h-7 flex items-center justify-center text-xs rounded-lg bg-gray-250 text-white">
+                Investments
+              </button>
+                <h3 class="text-xl font-bold mb-4">
+                  Kryptowährungen – Fluch oder Segen?
+                </h3>
+                <a href="#" class="flex items-center gap-1"><span class="font-bold text-xs">Jetzt lesen</span> 
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2321_1619)">
+                    <path d="M5.62891 12.2793L13.7216 7.06889" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.2793 5.89062L13.7215 7.06976L12.5424 12.512" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2321_1619">
+                    <rect width="14" height="14" fill="white" transform="translate(0 7.57812) rotate(-32.7749)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+            </div>
+            <div class="max-w-sm">
+              <img class="w-full rounded-xl mb-3 md:mb-6" src="./img/market/image-2.png" alt="logo">
+              <button class="w-[118px] h-7 flex items-center justify-center bg-gray-250 text-xs rounded-lg text-white">
+                Entrepreneurship
+              </button>
+                <h3 class="text-xl font-bold mb-4">
+                  3 Gründe für Start-Up Investments in und trotz Krisenzeiten
+                </h3>
+                <a href="#" class="flex items-center gap-1"><span class="font-bold text-xs">Jetzt lesen</span> 
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2321_1619)">
+                    <path d="M5.62891 12.2793L13.7216 7.06889" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.2793 5.89062L13.7215 7.06976L12.5424 12.512" stroke="#002B64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2321_1619">
+                    <rect width="14" height="14" fill="white" transform="translate(0 7.57812) rotate(-32.7749)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:flex absolute top-1/3 right-4">
+        <div class="flex flex-col w-8 md:justify-center gap-2">
+          <a href="#"
+            ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+          /></a>
+          <a href="#">
+            <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+      >
+        <p class="text-sm md:text-lg text-white">05</p>
+      </div>
+    </section>
+    <!-- KÜFFNER 06-->
+    <section class="relative py-16 md:py-24">
+      <div class="max-w-xll px-5 mx-auto overflow-hidden">
+        <h2 class="font-extrabold text-5xl text-center mb-1 md:text-6xl">KÜFFNER</h2>
+        <div class="flex items-center justify-center gap-3 mb-14">
+          <a href="#" class="font-extrabold text-[9px] md:text-xs">CAPITAL.</a>
+          <a href="#" class="font-extrabold text-[9px] md:text-xs">CONSULTING.</a>
+          <a href="#" class="font-extrabold text-[9px] md:text-xs">STUDIOS.</a>
+          <a href="#" class="font-extrabold text-[9px] md:text-xs">NETWORK.</a>
+          <a href="#" class="font-extrabold text-[9px] md:text-xs">SPORTS.</a>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Projektportfolio, Gründungen & Investments</h3>
+        <p class="max-w-[682px] font-normal text-base mb-10">
+          Die Küffner Group ist ein international agierendes Unternehmenskonzept mit Fokus auf Venture Capital Investment Projekte, Unternehmensberatungen, Coachings, Agentur Kreativ-Produktionen und exklusiven Sport-Vermarktungen.
+        </p>
+        <div class="flex flex-col lg:flex-row gap-y-14 w-full gap-12 ">
+          <div class="w-[30rem] mx-auto lg:mx-0 flex flex-col gap-y-6">
+            <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center max-w-lg justify-between ">
+              <div class="h-20 w-44 flex justify-center items-center bg-gray-300 rounded-lg">
+                <img src="./img/icon/KÜFFNER-29 1.svg" alt="">
+              </div>
+              <div class="max-w-[234px]">
+                <h4 class="text-xl font-bold">Küffner Capital</h4>
+                <p class="text-lg font-normal">Unternehmensbeteiligungen</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center max-w-lg justify-between ">
+              <div class="h-20 w-[170px] flex justify-center items-center bg-gray-300 rounded-lg">
+                <img src="./img/icon/KÜFFNER-32 1.svg" alt="">
+              </div>
+              <div class="max-w-[234px]">
+                <h4 class="text-xl font-bold">Küffner Capital</h4>
+                <p class="text-lg font-normal">Unternehmensbeteiligungen</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center max-w-lg justify-between ">
+              <div class="h-20 w-24 flex justify-center items-center bg-gray-300 rounded-lg">
+                <img src="./img/icon/KÜFFNER-33 1.svg" alt="">
+              </div>
+              <div class="max-w-[234px]">
+                <h4 class="text-xl font-bold">Küffner Capital</h4>
+                <p class="text-lg font-normal">Unternehmensbeteiligungen</p>
+              </div>
+            </div>
+            <button class="bg-blue-250 py-4 w-44 flex gap-1 items-center px-5 rounded-md ">
+             <a href="#" class="text-white  font-semibold text-base">alle Projekte</a>
+             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2321_1763)">
+                <path d="M5.62891 12.2793L13.7216 7.06889" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.2793 5.89062L13.7215 7.06976L12.5424 12.512" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_2321_1763">
+                <rect width="14" height="14" fill="white" transform="translate(0 7.57812) rotate(-32.7749)"/>
+                </clipPath>
+                </defs>
+             </svg>
+            </button>
+          </div>  
+          <div class="relative  mx-auto lg:mx-0 max-w-[310px]">
+            <img class="w-2/3 md:w-auto" src="./img/market/andreas-3.png" alt="logo">
+            <img class="absolute w-44 sm:w-48 md:w-auto  -right-[10%] sm:-right-[18%] -top-1/3 md:-right-3/4" src="./img/market/andreas-4.png" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="hidden xl:flex absolute top-1/3 right-4">
+        <div class="flex flex-col w-8 md:justify-center gap-2">
+          <a href="#"
+            ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+          /></a>
+          <a href="#">
+            <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div
+      class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+    >
+      <p class="text-sm md:text-lg text-white">06</p>
+    </div>
+    </section>
+    <!--  KÜFFNER 07 -->
+    <section class="py-14 md:py-28 relative bg-hero-back bg-cover bg-no-repeat">
+      <div class="mx-auto max-w-[420px] mb-12">
+        <a
+          href="#"
+          class="flex max-w-[160px] font-extrabold shrink-0 mx-auto items-center gap-2 mb-8 md:mb-28"
+        >
+          <img src="./img/header/title.svg" alt="logo" />
+          <span class="text-4xl text-gray-250">/</span>
+          <span class="">
+            PRESSE & <br> MEDIA
+          </span>
+        </a>
+    </div>
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-7  sm:mb-16">
+      <div class="lg:col-span-3 gap-5 grid grid-cols-1">
+        <div class="hidden md:flex items-center h-44 lg:h-auto bg-white rounded-xl justify-center">
+          <div class="max-w-[340px] mb-5">
+            <p class="font-bold text-base mb-1">
+              “Mein Ziel ist es, Potentiale zu erkennen, zu
+              entwickeln und damit Menschen zu helfen.”
+            </p>
+            <p class="font-bold text-xs text-gray-250">- Andreas Küffner</p>
+          </div>
+        </div>
+        <img class="w-full rounded-xl" src="./img/market/Rectangle 149.png" alt="logo">
+      </div>
+      <div class="flex flex-col gap-y-5 lg:col-span-4">
+        <div class="flex flex-col-reverse md:flex-row gap-5">
+          <img class="rounded-xl w-full md:w-1/2" src="./img/market/Rectangle 144.png" alt="logo">
+          <div class="flex items-center h-48 md:h-auto w-full rounded-xl bg-white justify-center md:w-1/2">
+            <div class="max-w-[282px] ">
+              <p class="font-bold text-base mb-5">
+                “Andreas schafft es mit gekonntem
+                 Fingerspitzengefühl, Business Chancen zu sehen und großartig umzusetzen.”
+              </p>
+              <a href="#">
+                <img src="./img/icon/Forbes.svg" alt="logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-5 border-4">
+          <div class="flex items-center h-48 md:h-auto col-span-2 w-full bg-white rounded-xl justify-center">
+            <div class="max-w-sm">
+              <p class="font-bold text-base mb-5">
+                “Andreas leistet Pionierarbeit auf etlichen Gebieten.” 
+              </p>
+              <a href="#">
+                <img src="./img/icon/founder-1.svg" alt="logo">
+              </a>
+            </div>
+          </div>
+          <img class="rounded-xl col-span-3 w-full" src="./img/market/Rectangle 148.png" alt="logo">
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:block max-w-xll mx-auto px-5">
+      <div class=" grid grid-cols-3 md:grid-cols-6 gap-9">
+        <a href="#"><img src="./img/icon/erfolg.svg" alt="logo" /></a>
+        <a href="#"><img src="./img/icon/finanzwelt.svg" alt="logo" /></a>
+        <a href="#"><img src="./img/icon/founders.svg" alt="logo" /></a>
+        <a href="#"><img src="./img/icon/grunder.svg" alt="logo" /></a>
+        <a href="#"><img src="./img/icon/netcoo.svg" alt="logo" /></a>
+        <a href="#"><img src="./img/icon/amazon.svg" alt="logo" /></a>
+      </div>
+    </div>
+    <div class="hidden xl:flex absolute top-1/3 right-4">
+      <div class="flex flex-col w-8 md:justify-center gap-2">
+        <a href="#"
+          ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+        /></a>
+        <a href="#"
+          ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+        /></a>
+        <a href="#"
+          ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+        /></a>
+        <a href="#">
+          <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+        /></a>
+      </div>
+    </div>
+    <div
+    class="absolute bottom-0 right-0 hidden sm:flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+  >
+    <p class="text-sm md:text-lg text-white">07</p>
+  </div>
+    </section>
+  <!--  KÜFFNER 08 -->
+  <section class="py-14 md:py-28 relative bg-hero-back bg-cover bg-no-repeat">
+    <div class="max-w-xll mx-auto px-5">
+      <a
+          href="#"
+          class="flex max-w-[160px] font-extrabold shrink-0 mx-auto items-center gap-2 mb-8 md:9"
+        >
+          <img src="./img/header/title.svg" alt="logo" />
+          <span class="text-4xl text-gray-250">/</span>
+          <span class="">
+            CONTENT <br> CREATION
+          </span>
+        </a>
+        <p class="font-bold text-xl md:text-3xl text-center mb-9">Folge mir auf den Sozialen Netzwerken!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-9">
+          <div class="pt-7 md:px-10 px-7  mx-auto border-4 border-blue-250">
+            <img class="mb-2" src="./img/header/instagram.svg" alt="logo">
+            <h3 class=" text-base font-extrabold mb-3">INSTAGRAM</h3>
+            <p class="max-w-[240px] font-medium text-xs mx-auto mb-9">
+              Hier erhältst du Einblicke hinter die Kulissen und persönliche Inputs aus dem Unternehmeralltag.
+            </p>
+              <img class="w-full" src="./img/market/instagram.png" alt="logo">
+          </div>
+          <div class="pt-7 md:px-10 px-7 mx-auto md:mx-0 border-4 border-blue-250">
+            <img class="mb-2" src="./img/header/yuotube.svg" alt="logo">
+            <h3 class=" text-base font-extrabold mb-3">YOUTUBE</h3>
+            <p class="max-w-[240px] font-medium text-xs mx-auto mb-9">
+              Hier findest du wertvolle Videos zum Aufbau deines Unternehmens mit direkten Inhalten aus der Praxis.
+            </p>
+              <img class="w-full" src="./img/market/youtube.png" alt="logo">
+          </div>
+          <div class="pt-7 md:px-10 px-7 mx-auto  border-4 border-blue-250">
+            <img class="mb-2" src="./img/header/micrafon.svg" alt="logo">
+            <h3 class=" text-base font-extrabold mb-3">PODCAST</h3>
+            <p class="font-medium w-[240px] text-xs mx-auto lg:w-[260px] md:mx-0 mb-9">
+              Exklusive Insights, Learnings Interviews mit inspirierenden Persönlichkeiten Unternehmerwelt.
+            </p>
+              <img class="w-full" src="./img/market/podcast.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    <div class="hidden xl:flex absolute top-1/3 right-4">
+      <div class="flex flex-col w-8 md:justify-center gap-2">
+        <a href="#"
+          ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+        /></a>
+        <a href="#"
+          ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+        /></a>
+        <a href="#"
+          ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+        /></a>
+        <a href="#">
+          <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+        /></a>
+      </div>
+    </div>
+    <div
+    class="hidden absolute bottom-0 right-0 sm:flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+  >
+    <p class="text-sm md:text-lg text-white">08</p>
+  </div>
+  </section>
+    <!--  footer -->
+    <footer class="relative pt-10 pb-28 bg-footer-bg bg-cover bg-no-repeat md:py-20">
+      <div class="max-w-xll flex flex-col lg:flex-row items-start justify-between mx-auto px-5">
+        <div class="">
+          <div class="">
+           <div class="relative">
+            <div class="hidden absolute -left-10 lg:block mx-auto max-w-sm md:mx-0">
+              <img class="w-full" src="./img/footer-title.png" alt="logo">
+            </div>
+           </div>
+            <a
+              href="#"
+              class=" flex lg:hidden max-w-[160px] font-extrabold shrink-0 mx-auto items-center gap-2 mb-10"
+            >
+              <img src="./img/header/title.svg" alt="logo" />
+              <span class="text-base text-gray-250">/</span>
+              <span class="text-base">
+                CONTENT <br> CREATION
+              </span>
+            </a>
+          </div>
+            <div class="hidden pt-60 lg:block">
+              <div class="mb-8 ">
+                <p class="font-extrabold text-xs mb-1">EMAIL PRESSE/KEYNOTES/INTERVIEWS:</p>
+                <a href="#" class="font-normal text-base text-gray-250">info@kueffner-group.com</a>
+              </div>
+              <div>
+                <p class="font-extrabold text-xs mb-1">EMAIL business inquiries:</p>
+                <a href="#" class="font-normal text-base text-gray-250">info@andreas-kueffner.com</a>
+              </div>
+            </div>
+        </div>
+        <div class="">
+          <p class="font-bold text-xl pt-16 max-w-[600px] pb-16">
+              Ich liebe es, großartige Ideen und inspirerende Menschen kennenzulernen.
+              We´re building people and then business.
+        </p>
+        <div class="block lg:hidden mb-12">
+          <div class="mb-8 ">
+            <p class="font-extrabold text-xs mb-1">EMAIL PRESSE/KEYNOTES/INTERVIEWS:</p>
+            <a href="#" class="font-normal text-base text-gray-250">presse@andreas-kueffner.com</a>
+          </div>
+          <div>
+            <p class="font-extrabold text-xs mb-1">EMAIL business inquiries:</p>
+            <a href="#" class="font-normal text-base text-gray-250">info@andreas-kueffner.com</a>
+          </div>
+        </div>  
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <form action="#" class="flex flex-col">
+            <label for="name" class=" font-semibold">Dein Name</label>
+            <input class="py-3 px-4 w-full rounded-md bg-white border-2 border-b-gray-250  outline-none" type="name" name="name" id="name" placeholder="Dein Name">
+          </form>
+          <form action="#" class="flex flex-col">
+            <label for="email" class=" font-semibold">Deine E-Mail</label>
+            <input class="py-3 px-4 w-full rounded-md bg-white border-2 border-b-gray-250  outline-none" type="email" name="email" id="email" placeholder="Deine E-Mail">
+          </form>
+          <form action="#" class="flex flex-col">
+            <label for="number" class=" font-semibold">Deine Handynummer</label>
+            <input class="py-3 px-4 w-full rounded-md bg-white border-2 border-b-gray-250  outline-none" type="number" name="number" id="number" placeholder="Betreff">
+          </form>
+            <div class="">
+              <p class="font-semibold">Dein Anliegen</p>
+              <select class="py-3 px-4 w-full rounded-md bg-white border-2 border-b-gray-250  outline-none">
+                <option value="Keynote">Keynote</option>
+                <option value="Keynote">Keynote</option>
+                <option value="Keynote">Keynote</option>
+              </select>
+            </div>
+        </div> 
+        <form action="#" class="mb-7">
+          <label for="text" class="font-semibold">Deine Nachricht</label>
+          <textarea class="py-3 px-4 w-full h-24 rounded-md bg-white border-2 border-b-gray-250  outline-none " name="" id="" cols="30" rows="10" placeholder="Schreibe hier Deine Nachricht..."></textarea>
+        </form>
+        <button class="py-4 px-9 bg-blue-250 text-white text-base font-semibold rounded-md mb-16 md:mb-40">
+          Abschicken
+        </button>
+      </div>
+      </div>
+      <div class="absolute left-[10%] bottom-24 sm:mb-10 max-w-xs gap-2 flex items-center justify-between">
+        <p class="max-w-[120px] sm:max-w-[160px] text-xs sm:text-sm font-semibold">
+          © 2022 Copyright.
+          All rights reserved
+        </p>
+        <p class="max-w-[114px] sm:max-w-[150px] text-xs sm:text-sm font-semibold">
+          <span class="underline">Impressum & AGB</span>
+          Datenschutz
+        </p>
+      </div>
+      <div class="hidden lg:flex absolute top-1/3 right-4">
+        <div class="flex flex-col w-8 md:justify-center gap-2">
+          <a href="#"
+            ><img class="w-7" src="./img/header/insvg.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/instagram.svg" alt="logo"
+          /></a>
+          <a href="#"
+            ><img class="w-7" src="./img/header/yuotube.svg" alt="logo"
+          /></a>
+          <a href="#">
+            <img class="w-7" src="./img/header/micrafon.svg" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 right-0 flex items-center z-0 justify-center rounded-tl-md w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] bg-blue-250"
+      >
+        <img class="w-[30%]" src="./img/icon/5 2.svg" alt="logo">
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./JS/app.js"></script>
   </body>
-</html>
+</html>                                                   
